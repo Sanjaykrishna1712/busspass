@@ -1,0 +1,133 @@
+/* PassInfo.css */
+.passinfo-content { 
+  flex: 1; 
+  padding: 30px; 
+}
+
+.pass-card { 
+  background: #fff; 
+  border-radius: 12px; 
+  padding: 24px; 
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06); 
+}
+
+.pass-card h2 { 
+  margin: 0 0 18px; 
+  color: #333; 
+  font-size: 24px;
+}
+
+.pass-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  gap: 14px; 
+  margin-bottom: 20px;
+}
+
+.field { 
+  background: #fafaff; 
+  border: 1px solid #ececff; 
+  padding: 12px 14px; 
+  border-radius: 10px; 
+}
+
+.label { 
+  display: block; 
+  font-size: 12px; 
+  color: #777; 
+  margin-bottom: 6px; 
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.value { 
+  font-weight: 600; 
+  color: #333; 
+  font-size: 14px;
+}
+
+.badge { 
+  padding: 4px 10px; 
+  border-radius: 20px; 
+  font-size: 12px; 
+  font-weight: 600; 
+}
+
+.badge.active { 
+  background: #e6f4ea; 
+  color: #1b5e20; 
+}
+
+.badge.expired { 
+  background: #ffebee; 
+  color: #c62828; 
+}
+
+.pass-actions { 
+  margin-top: 18px; 
+  display: flex; 
+  gap: 12px; 
+  flex-wrap: wrap; 
+}
+
+.btn { 
+  padding: 10px 16px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  border: 1px solid transparent; 
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn.primary { 
+  background: #6b73ff; 
+  color: white; 
+}
+
+.btn.primary:hover { 
+  background: #5a63e6; 
+}
+
+.btn.outline { 
+  background: white; 
+  border-color: #6b73ff; 
+  color: #6b73ff; 
+}
+
+.btn.outline:hover { 
+  background: #f5f5ff; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px){ 
+  .passinfo-content { 
+    padding: 20px; 
+  }
+  
+  .pass-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pass-actions {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .passinfo-content {
+    padding: 15px;
+  }
+  
+  .pass-card {
+    padding: 18px;
+  }
+  
+  .field {
+    padding: 10px;
+  }
+}
